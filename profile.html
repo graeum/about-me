@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> graham </title>
+        <link rel="icon" type="image/x-icon" href="https://caitsith.neocities.org/computer7.gif">
+        <meta name="title" content="marshdotcom">
+        <meta name="description" content="graham's personal>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="profile.css?nocache=120925">
+        <link rel="stylesheet" href="profile-content/musicplayer.css">
+        <script src="https://kit.fontawesome.com/5f311f1b4a.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="invisible-scrollbar">
+        <div id="page">
+            <div id="banner">
+                <img ="Banner for marshdotcom's Neocites site. The background is a dark blue with silaltver stars sprinkled throughout and a rainbow going across a part of the banner. On top to the far left there is text that reads 'marshdotcom' with the site's URL directly below. " src="universal/banner.png">
+            </div>
+            <div id="main">
+                <div id="floating-RB">
+                    <div class="tab collapsible" id="floating-RBtab">
+                        <span style="-ms-user-select: none; user-select: none;">
+                            <img src="https://i.redd.it/dwsd58yvs5pe1.png" style="position: relative; height: 14px; top: 1px;">
+                            music player<i class="fa-regular fa-square-caret-down" id="droparrow"></i>
+                           
+                            <i class="fa-solid fa-up-down-left-right"></i>
+                        </span>
+                    </div>
+                    <div class="content" id="RBtabcontent">
+                        
+
+                        <div class="music-window">
+                            
+                           <iframe 
+    id="spotify-embed" 
+    src="https://open.spotify.com/embed/playlist/47yVjDdCrCGerOTSUMj43A" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy">
+</iframe>
+
+
+                            <div class="music-body">
+                                <div class="music-container">
+                                    
+                                    <div class="music-info">
+                                        <div id="title"></div>
+                                        <p id="album"></p>
+                                        <div class="progress-container">
+                                            <div class="progress"></div>
+                                            <p id="duration"></p>
+                                        </div>
+                                    </div>
+                                    <audio src="" id="audio"></audio>
+                                    <div class="img-container">
+                                    
+                                    </div>
+                                    <div class="navigation">
+                                        <button id="prev" class="action-btn">
+                                            
+                                        </button>
+                                        <button id="play" class="action-btn action-btn-big">
+                                            
+                                        </button>
+                                        <button id="next" class="action-btn">
+                                          
+                                        </button>
+                                    </div>
+
+                                    <!-- keep playlist structure for JS, hide textual labels -->
+                                    <ul class="tracklist" aria-hidden="true">
+                                        <li data-index="0" onclick="setTrack(0)"><span class="trackInfo"><span class="trackTitle">Title</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
+                                        <li data-index="1" onclick="setTrack(1)"><span class="trackInfo"><span class="trackTitle">Title</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
+                                        <li data-index="2" onclick="setTrack(2)"><span class="trackInfo"><span class="trackTitle">Title</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
+                                        <li data-index="3" onclick="setTrack(3)"><span class="trackInfo"><span class="trackTitle">Title</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
+                                        <li data-index="4" onclick="setTrack(4)"><span class="trackInfo"><span class="trackTitle">Title</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
+                                        <li data-index="5" onclick="setTrack(5)"><span class="trackInfo"><span class="trackTitle">Title</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
+                                        <li data-index="6" onclick="setTrack(6)"><span class="trackInfo"><span class="trackTitle">Title</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
+                                    </ul>
+
+                                    <div id="mp-bgbox"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="left-column">
+                    <div class="LC-box">
+                        <div class="tab">
+                            <img alt="Icon for the computer in Windows XP." src="da pee cee.png" style="position: relative; height: 14px; top: 1px;">navigation
+                    
+                        </div>
+                        <div class="content" id="nav">
+                            <a class="nav-inactive" href="" id="link-sitemap">sitemap
+                        </a>
+                            <a class="nav-active" id="link-goback" style="margin-bottom: 0px;" href="index.html">go back
+                        </a>
+                        </div>
+                    </div>
+                    <div class="LC-box">
+                        <div class="tab">
+                            <span style="-ms-user-select: none; user-select: none;">
+                                <img alt="Icon for Internet Explorer in Windows XP." src="da explore.png" style="position: relative; height: 14px;">status
+                            </span>
+                        </div>
+                        <div class="content">
+                            <div id="statuscafe">
+                                <div id="statuscafe-username"></div>
+                                <div id="statuscafe-content"></div>
+                            </div>
+                            <script src="" defer></script>
+                        </div>
+                    </div>
+                    <div class="LC-box" id="LC-box-bottom">
+                        <div class="info">
+                            <img alt="An image of a speech bubble with a blue, bold i with serif inside." style="image-rendering: pixelated;" src="universal/info-bubble.png">
+                            <span class="tooltiptext">
+                                <strong>note</strong>
+                                :<br>if your stamp is here and you'd like a link back to your site as credit, please don't be afraid to reach out!
+                        
+                            </span>
+                        </div>
+                        <div class="tab">
+                            <img alt="Icon for File Explorer from Windows XP." src="da file.png" style="position: relative; height: 14px; top: 2px;">stamps
+                    
+                        </div>
+                        <div class="content" id="stamps-marquee" style="padding: 7px 10px;">
+                            <div id="marquee2-inner">
+                                <img alt="Animated stamp of Jerma winking awkwardly at the viewer." src="profile-content/stamps/jerma.gif">
+                                <img alt="Animated stamp of the DVD screensaver. The logo bounces around but never hits a corner." src="profile-content/stamps/dvd.gif">
+                                <img alt="Animated stamp that reads 'DO NOT FALL DOWN STAIRS' and depicts a stick figure falling down a flight of stairs." src="profile-content/stamps/stairs.gif">
+                                <img alt="Stamp of the orange inkling from Splatoon." src="profile-content/stamps/inkling.png">
+                                <img alt="Stamp of a 3D yellow emoji with shades on a white background. It faces the right in 3/4 view and has been stretched comedically." src="profile-content/stamps/shades.png">
+                                <img alt="Animated stamp of a little yellow emoji painting on a canvas against a greenish-yellow background." src="profile-content/stamps/drawing.gif">
+                                <img alt="Animated stamp of a user playing a section of their workspace in the Vocaloid editor. As the playhead scrolls over, it reveals some notebars that were arranged to read 'I Love Vocaloid' before sending the playhead back to the beginning as the gif restarts." src="profile-content/stamps/voca.gif">
+                                <img alt="Animated stamp of a blue penguin from 'Club Penguin' dancing the iconic dance from the game." src="profile-content/stamps/club-penguin.gif">
+                                <img alt="Stamp of a yellow emoji smiling at a PC with the text 'going online to act silly' along the top." src="profile-content/stamps/goingonline.png">
+                                <img alt="Stamp of 3D text that's been skewed and reads 'I AM VERY SLEEPY'." src="profile-content/stamps/sleepy.png">
+                                <img alt="Stamp of Jason Voorhees from the 'Friday the 13th' movie series, there text on the bottom that reads 'HORROR FAN'." src="profile-content/stamps/horror.png">
+                                <img alt="Stamp of a Windows 98 era computer icon with text below that reads 'i love old web'." src="profile-content/stamps/old-web.png">
+                                <img alt="Stamp of the 'Petscop' opening game title from the YouTube horror web series of the same name." src="profile-content/stamps/petscop.png">
+                                <img alt="Stamp of the entire Bad Apple music video." src="profile-content/stamps/badapple.gif">
+                                <!--repeating-->
+                                <img alt="Animated stamp of Jerma winking awkwardly at the viewer." src="profile-content/stamps/jerma.gif">
+                                <img alt="Animated stamp of the DVD screensaver. The logo bounces around but never hits a corner." src="profile-content/stamps/dvd.gif">
+                                <img alt="Animated stamp that reads 'DO NOT FALL DOWN STAIRS' and depicts a stick figure falling down a flight of stairs." src="profile-content/stamps/stairs.gif">
+                                <img alt="Stamp of the orange inkling from Splatoon." src="profile-content/stamps/inkling.png">
+                                <img alt="Stamp of a 3D yellow emoji with shades on a white background. It faces the right in 3/4 view and has been stretched comedically." src="profile-content/stamps/shades.png">
+                                <img alt="Animated stamp of a little yellow emoji painting on a canvas against a greenish-yellow background." src="profile-content/stamps/drawing.gif">
+                                <img alt="Animated stamp of a user playing a section of their workspace in the Vocaloid editor. As the playhead scrolls over, it reveals some notebars that were arranged to read 'I Love Vocaloid' before sending the playhead back to the beginning as the gif restarts." src="profile-content/stamps/voca.gif">
+                                <img alt="Animated stamp of a blue penguin from 'Club Penguin' dancing the iconic dance from the game." src="profile-content/stamps/club-penguin.gif">
+                                <img alt="Stamp of a yellow emoji smiling at a PC with the text 'going online to act silly' along the top." src="profile-content/stamps/goingonline.png">
+                                <img alt="Stamp of 3D text that's been skewed and reads 'I AM VERY SLEEPY'." src="profile-content/stamps/sleepy.png">
+                                <img alt="Stamp of Jason Voorhees from the 'Friday the 13th' movie series, there text on the bottom that reads 'HORROR FAN'." src="profile-content/stamps/horror.png">
+                                <img alt="Stamp of a Windows 98 era computer icon with text below that reads 'i love old web'." src="profile-content/stamps/old-web.png">
+                                <img alt="Stamp of the 'Petscop' opening game title from the YouTube horror web series of the same name." src="profile-content/stamps/petscop.png">
+                                <img alt="Stamp of the entire Bad Apple music video." src="profile-content/stamps/badapple.gif">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="right-column">
+                    <div class="tab">
+                        <span>
+                            <img alt="Icon for Internet Explorer in Windows XP." src="da explore.png" style="position: relative; height: 14px; top: 1px;">profile
+                        </span>
+                    </div>
+                    <div class="window">
+                        <menu role="tablist" aria-label="Sample Tabs" id="Rcolumn-navbar">
+                            <button role="tab" aria-selected="true" aria-controls="tab-A" tabindex="0" id="tab-1">about</button>
+                            <a href="boundaries.html" style="text-decoration: none;"><button role="tab" aria-controls="tab-B" style="cursor: pointer;">boundaries</button></a>
+                            <a href="quiz-results.html" style="text-decoration: none;"><button role="tab" aria-controls="tab-C" style="cursor: pointer;">interests</button></a>
+                        </menu>
+                        <article role="tabpanel" class="Rcolumn-content" id="tab-A">
+                            <div id="about">
+                                <div id="about-innerbounds1">
+                                    <div id="about-profilecol">
+                                        <img class="rainbow-border" id="about-pfp" src="https://i.pinimg.com/1200x/21/81/58/2181580bac83db7a3bc3867fef1582a2.jpg">
+                                        <div id="about-info1">
+                                            <span style="font-family: JMHCthulhumbusArcade; font-size: 18px; color: #0012ca;">Graham</span>
+                                            [17]<br>
+                                            
+                                        </div>
+                                    </div>
+                                    <div id="about-box1">
+                                        <span style="padding: 1px 3px; font-family: JMHCthulhumbusArcade; font-size: 16px; color: #fff; background-color: #0012ca;">bio</span>
+                                        
+                                       
+                                    <br>
+                                        <br>
+                                        <span style="padding: 1px 3px; font-family: JMHCthulhumbusArcade; font-size: 16px; color: #fff; background-color: #0012ca;">socials</span>
+                                       
+                                    <br>
+                                        <br>
+                                        <span style="padding: 1px 3px; font-family: JMHCthulhumbusArcade; font-size: 16px; color: #fff; background-color: #0012ca;">current obsession</span>
+                                        
+                                
+                                    </div>
+                                </div>
+                                <div id="about-innerbounds2">
+                                    <div id="about-innerbounds3">
+                                        <div class="decor-box" style="background-color:#fff; border:1px outset #919b9c; padding:13px; height:237px; overflow:auto;">
+                                            <span style="padding: 1px 3px; font-family: JMHCthulhumbusArcade; font-size: 16px; color: #fff; background-color: #0012ca;">extras</span>
+                                            <br><br>
+                                            <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                                                <img alt="jerma stamp" src="profile-content/stamps/jerma.gif" style="height:48px;">
+                                                <img alt="dvd stamp" src="profile-content/stamps/dvd.gif" style="height:48px;">
+                                                <img alt="inkling" src="profile-content/stamps/inkling.png" style="height:48px;">
+                                                <img alt="shades" src="profile-content/stamps/shades.png" style="height:48px;">
+                                            </div>
+                                            <br>
+                                            <ul style="margin:0; padding-left:18px; font-family: 'CodersCrux';">
+                                                <li>favorite track: <em>Oochy Woochy</em></li>
+                                                <li>mood: chill</li>
+                                                <li>currently reading: <a href="#">book</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="about-innerbounds4">
+                                        <span id="innrbnds4-title">favs!</span>
+                                        <a href="https://en.wikipedia.org/wiki/Blur_(band)" title="Blur" target="_blank">
+                                            <img alt="Blur" src="https://i.pinimg.com/736x/f0/1e/9a/f01e9acbb4277ba72384da91c0c6202c.jpg">
+                                        </a>
+                                        <a href="https://en.wikipedia.org/wiki/Car_Seat_Headrest" title="Car Seat Headrest" target="_blank">
+                                            <img alt="Car Seat Headrest" src="https://i.pinimg.com/736x/3c/07/07/3c07072a254facf807c0376aa9fe3fd7.jpg">
+                                        </a>
+                                        <a href="https://en.wikipedia.org/wiki/Jeff_Buckley" title="Jeff Buckley" target="_blank">
+                                            <img alt="Jeff Buckley" src="https://i.pinimg.com/736x/9b/a1/35/9ba135f9725e90f9f757d0afe4c23f4a.jpg">
+                                        </a>
+                                        <a href="https://en.wikipedia.org/wiki/Neutral_Milk_Hotel" title="Neutral Milk Hotel" target="_blank">
+                                            <img alt="Neutral Milk Hotel" src="https://i.pinimg.com/736x/de/1c/93/de1c93a72bdc0ce9c9f95a0892355991.jpg">
+                                        </a>
+                                        <a href="https://en.wikipedia.org/wiki/Pavement_(band)" title="Pavement" target="_blank">
+                                            <img alt="Pavement" src="https://i.pinimg.com/736x/46/05/d9/4605d9152bf75d692777d37f20c450d8.jpg">
+                                        </a>
+                                        <a href="https://en.wikipedia.org/wiki/Primal_Scream" title="Primal Scream" target="_blank">
+                                            <img alt="Primal Scream" src="https://i.pinimg.com/736x/2d/99/56/2d995611ff73f2a6b10c3b7c87571eec.jpg">
+                                        </a>
+                                        <a href="https://en.wikipedia.org/wiki/Pulp_(band)" title="Pulp" target="_blank">
+                                            <img alt="Pulp" src="https://i.pinimg.com/1200x/cc/b0/2d/ccb02d03fed92cc87764281e479d9919.jpg">
+                                        </a>
+                                        <a href="https://en.wikipedia.org/wiki/The_Beatles" title="The Beatles" target="_blank">
+                                            <img alt="The Beatles" src="https://i.pinimg.com/736x/78/4a/71/784a71688cea4185d7856beee8b9e8a4.jpg">
+                                        </a>
+                                        <a href="https://en.wikipedia.org/wiki/The_Pastels" title="The Pastels" target="_blank">
+                                            <img alt="The Pastels" src="https://i.pinimg.com/736x/a1/e3/20/a1e32067903bdf13c70e1b3be68938f5.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article role="tabpanel" class="Rcolumn-content" id="tab-B" hidden>
+                            <div id="boundaries">
+                            </div>
+                        </article>
+                        <article role="tabpanel" class="Rcolumn-content" id="tab-C" hidden>
+                            <div id="quiz-results">
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            dragElement(document.getElementById("floating-RB"));
+
+            function dragElement(elmnt) {
+                var pos1 = 0
+                  , pos2 = 0
+                  , pos3 = 0
+                  , pos4 = 0;
+                if (document.getElementById(elmnt.id + "tab")) {
+
+                    document.getElementById(elmnt.id + "tab").onmousedown = dragMouseDown;
+                } else {
+                    elmnt.onmousedown = dragMouseDown;
+                }
+
+                function dragMouseDown(e) {
+                    e = e || window.event;
+                    e.preventDefault();
+
+                    pos3 = e.clientX;
+                    pos4 = e.clientY;
+                    document.onmouseup = closeDragElement;
+
+                    document.onmousemove = elementDrag;
+                }
+
+                function elementDrag(e) {
+                    e = e || window.event;
+                    e.preventDefault();
+
+                    pos1 = pos3 - e.clientX;
+                    pos2 = pos4 - e.clientY;
+                    pos3 = e.clientX;
+                    pos4 = e.clientY;
+
+                    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+                }
+
+                function closeDragElement() {
+                    document.onmouseup = null;
+                    document.onmousemove = null;
+                }
+            }
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var contentDiv = document.getElementById("RBtabcontent");
+                var chevronElement = document.getElementById("droparrow");
+                var mainDiv = document.getElementById("floating-RB");
+
+                chevronElement.addEventListener("click", function() {
+                    if (contentDiv.style.display === "block") {
+                        contentDiv.style.display = "none";
+                        chevronElement.style.transform = "rotate(180deg)";
+                        mainDiv.style.width = "210px";
+                        mainDiv.style.height = "fit-content";
+                    } else {
+                        contentDiv.style.display = "block";
+                        contentDiv.style.position = "relative";
+                        contentDiv.style.top = "3.5em";
+                        contentDiv.style.left = "5.07em";
+                        contentDiv.style.width = "fit-content";
+                        chevronElement.style.transform = "rotate(0deg)";
+                        mainDiv.style.width = "571px";
+                        mainDiv.style.height = "438px";
+                    }
+                });
+            });
+        </script>
+        <!-- functionality -->
+        <script src="js/tabs-profile.js"></script>
+        <script src="js/music-player.js?nocache=111125"></script>
+        <!-- tooltip -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+        <script>
+            (function($) {
+                $(document).ready(function() {
+                    $("[title]").style_my_tooltips({
+                        tip_follows_cursor: true,
+                        tip_delay_time: 10,
+                        tip_fade_speed: 10,
+                        attribute: "title"
+                    });
+                });
+            }
+            )(jQuery);
+        </script>
+    </body>
+</html>

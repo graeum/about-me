@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> graham </title>
+        <link rel="icon" type="image/x-icon" href="https://caitsith.neocities.org/computer7.gif">
+        <meta name="title" content="marshdotcom">
+        <meta name="description" content="graham's personal>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="profile.css?nocache=120925">
+        <link rel="stylesheet" href="profile-content/musicplayer.css">
+        <script src="https://kit.fontawesome.com/5f311f1b4a.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="invisible-scrollbar">
+        <div id="page">
+            <div id="banner">
+                <img ="Banner for marshdotcom's Neocites site. The background is a dark blue with silaltver stars sprinkled throughout and a rainbow going across a part of the banner. On top to the far left there is text that reads 'marshdotcom' with the site's URL directly below. " src="universal/banner.png">
+            </div>
+            <div id="main">
+                <div id="floating-RB">
+                    <div class="tab collapsible" id="floating-RBtab">
+                        <span style="-ms-user-select: none; user-select: none;">
+                            <img src="https://i.redd.it/dwsd58yvs5pe1.png" style="position: relative; height: 14px; top: 1px;">
+                            music player<i class="fa-regular fa-square-caret-down" id="droparrow"></i>
+                            <i class="fa-solid fa-up-down-left-right"></i>
+                        </span>
+                    </div>
+                    <div class="content" id="RBtabcontent">
+                        <div class="sidebar" style="position: relative; background-image: url(profile-content/music-player.png); width: auto; height: 270px; padding: 10px 0px; scale: 135%;">
+                            <div class="music-body">
+                                <div class="music-container">
+                                    <div class="music-info">
+                                        <div id="title">Title</div>
+                                        <br>
+                                        <p id="album">Album</p>
+                                        <div class="progress-container" style="top: 11.83em; left: 8.04em; width: 131.2px; height: 6.0px; border-radius: 1px;">
+                                            <div class="progress"></div>
+                                            <p id="duration">Duration</p>
+                                        </div>
+                                    </div>
+                                    <audio src="" id="audio"></audio>
+                                    <div class="img-container">
+                                        <img src="" alt="Album cover" id="cover">
+                                    </div>
+                                    <div class="navigation">
+                                        <button id="prev" class="action-btn">
+                                            <img src="profile-content/return.png" alt="Previous track">
+                                        </button>
+                                        <button id="play" class="action-btn action-btn-big">
+                                            <img src="profile-content/play.png" alt="Play/Pause">
+                                        </button>
+                                        <button id="next" class="action-btn">
+                                            <img src="profile-content/skip.png" alt="Next track">
+                                        </button>
+                                    </div>
+                                    <p id="tracklist-title">
+                                        Tracklist<img alt="Gif of rainbow-colored audio bars." src="profile-content/rainbow-audio.gif">
+                                    </p>
+                                    <div class="playlist">
+                                        <ul class="tracklist">
+                                            <li data-index="0" onclick="setTrack(0)">
+                                                <span class="trackInfo">
+                                                    <span class="trackTitle">Title</span>
+                                                    - <span class="trackArtist">Artist</span>
+                                                </span>
+                                                <span class="trackDuration">Duration</span>
+                                            </li>
+                                            <li data-index="1" onclick="setTrack(1)">
+                                                <span class="trackInfo">
+                                                    <span class="trackTitle">Title</span>
+                                                    - <span class="trackArtist">Artist</span>
+                                                </span>
+                                                <span class="trackDuration">Duration</span>
+                                            </li>
+                                            <li data-index="2" onclick="setTrack(2)">
+                                                <span class="trackInfo">
+                                                    <span class="trackTitle">Title</span>
+                                                    - <span class="trackArtist">Artist</span>
+                                                </span>
+                                                <span class="trackDuration">Duration</span>
+                                            </li>
+                                            <li data-index="3" onclick="setTrack(3)">
+                                                <span class="trackInfo">
+                                                    <span class="trackTitle">Title</span>
+                                                    - <span class="trackArtist">Artist</span>
+                                                </span>
+                                                <span class="trackDuration">Duration</span>
+                                            </li>
+                                            <li data-index="4" onclick="setTrack(4)">
+                                                <span class="trackInfo">
+                                                    <span class="trackTitle">Title</span>
+                                                    - <span class="trackArtist">Artist</span>
+                                                </span>
+                                                <span class="trackDuration">Duration</span>
+                                            </li>
+                                            <li data-index="5" onclick="setTrack(5)">
+                                                <span class="trackInfo">
+                                                    <span class="trackTitle">Title</span>
+                                                    - <span class="trackArtist">Artist</span>
+                                                </span>
+                                                <span class="trackDuration">Duration</span>
+                                            </li>
+                                            <li data-index="6" onclick="setTrack(6)">
+                                                <span class="trackInfo">
+                                                    <span class="trackTitle">Title</span>
+                                                    - <span class="trackArtist">Artist</span>
+                                                </span>
+                                                <span class="trackDuration">Duration</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p id="credit">
+                                        music player base<br>
+                                        code by <a href="https://odditycommoddity.neocities.org/" id="credit-link" title="odditycommoddity's site">odditycommoddity</a>
+                                        .
+                                    </p>
+                                    <div id="mp-bgbox"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="left-column">
+                    <div class="LC-box">
+                        <div class="tab">
+                            <img alt="Icon for the computer in Windows XP." src="da pee cee.png" style="position: relative; height: 14px; top: 1px;">navigation
+                    
+                        </div>
+                        <div class="content" id="nav">
+                            <a class="nav-inactive" href="" id="link-sitemap">sitemap
+                        </a>
+                            <a class="nav-active" id="link-goback" style="margin-bottom: 0px;" href="profile.html">go back
+                        </a>
+                        </div>
+                    </div>
+                    <div class="LC-box">
+                        <div class="tab">
+                            <span style="-ms-user-select: none; user-select: none;">
+                                <img alt="Icon for Internet Explorer in Windows XP." src="da explore.png" style="position: relative; height: 14px;">status
+                            </span>
+                        </div>
+                        <div class="content">
+                            <div id="statuscafe">
+                                <div id="statuscafe-username"></div>
+                                <div id="statuscafe-content"></div>
+                            </div>
+                            <script src="" defer></script>
+                        </div>
+                    </div>
+                    <div class="LC-box" id="LC-box-bottom">
+                        <div class="info">
+                            <img alt="An image of a speech bubble with a blue, bold i with serif inside." style="image-rendering: pixelated;" src="universal/info-bubble.png">
+                            <span class="tooltiptext">
+                                <strong>note</strong>
+                                :<br>if your stamp is here and you'd like a link back to your site as credit, please don't be afraid to reach out!
+                        
+                            </span>
+                        </div>
+                        <div class="tab">
+                            <img alt="Icon for File Explorer from Windows XP." src="da file.png" style="position: relative; height: 14px; top: 2px;">stamps
+                    
+                        </div>
+                        <div class="content" id="stamps-marquee" style="padding: 7px 10px;">
+                            <div id="marquee2-inner">
+                                <img alt="Animated stamp of Jerma winking awkwardly at the viewer." src="profile-content/stamps/jerma.gif">
+                                <img alt="Animated stamp of the DVD screensaver. The logo bounces around but never hits a corner." src="profile-content/stamps/dvd.gif">
+                                <img alt="Animated stamp that reads 'DO NOT FALL DOWN STAIRS' and depicts a stick figure falling down a flight of stairs." src="profile-content/stamps/stairs.gif">
+                                <img alt="Stamp of the orange inkling from Splatoon." src="profile-content/stamps/inkling.png">
+                                <img alt="Stamp of a 3D yellow emoji with shades on a white background. It faces the right in 3/4 view and has been stretched comedically." src="profile-content/stamps/shades.png">
+                                <img alt="Animated stamp of a little yellow emoji painting on a canvas against a greenish-yellow background." src="profile-content/stamps/drawing.gif">
+                                <img alt="Animated stamp of a user playing a section of their workspace in the Vocaloid editor. As the playhead scrolls over, it reveals some notebars that were arranged to read 'I Love Vocaloid' before sending the playhead back to the beginning as the gif restarts." src="profile-content/stamps/voca.gif">
+                                <img alt="Animated stamp of a blue penguin from 'Club Penguin' dancing the iconic dance from the game." src="profile-content/stamps/club-penguin.gif">
+                                <img alt="Stamp of a yellow emoji smiling at a PC with the text 'going online to act silly' along the top." src="profile-content/stamps/goingonline.png">
+                                <img alt="Stamp of 3D text that's been skewed and reads 'I AM VERY SLEEPY'." src="profile-content/stamps/sleepy.png">
+                                <img alt="Stamp of Jason Voorhees from the 'Friday the 13th' movie series, there text on the bottom that reads 'HORROR FAN'." src="profile-content/stamps/horror.png">
+                                <img alt="Stamp of a Windows 98 era computer icon with text below that reads 'i love old web'." src="profile-content/stamps/old-web.png">
+                                <img alt="Stamp of the 'Petscop' opening game title from the YouTube horror web series of the same name." src="profile-content/stamps/petscop.png">
+                                <img alt="Stamp of the entire Bad Apple music video." src="profile-content/stamps/badapple.gif">
+                                <!--repeating-->
+                                <img alt="Animated stamp of Jerma winking awkwardly at the viewer." src="profile-content/stamps/jerma.gif">
+                                <img alt="Animated stamp of the DVD screensaver. The logo bounces around but never hits a corner." src="profile-content/stamps/dvd.gif">
+                                <img alt="Animated stamp that reads 'DO NOT FALL DOWN STAIRS' and depicts a stick figure falling down a flight of stairs." src="profile-content/stamps/stairs.gif">
+                                <img alt="Stamp of the orange inkling from Splatoon." src="profile-content/stamps/inkling.png">
+                                <img alt="Stamp of a 3D yellow emoji with shades on a white background. It faces the right in 3/4 view and has been stretched comedically." src="profile-content/stamps/shades.png">
+                                <img alt="Animated stamp of a little yellow emoji painting on a canvas against a greenish-yellow background." src="profile-content/stamps/drawing.gif">
+                                <img alt="Animated stamp of a user playing a section of their workspace in the Vocaloid editor. As the playhead scrolls over, it reveals some notebars that were arranged to read 'I Love Vocaloid' before sending the playhead back to the beginning as the gif restarts." src="profile-content/stamps/voca.gif">
+                                <img alt="Animated stamp of a blue penguin from 'Club Penguin' dancing the iconic dance from the game." src="profile-content/stamps/club-penguin.gif">
+                                <img alt="Stamp of a yellow emoji smiling at a PC with the text 'going online to act silly' along the top." src="profile-content/stamps/goingonline.png">
+                                <img alt="Stamp of 3D text that's been skewed and reads 'I AM VERY SLEEPY'." src="profile-content/stamps/sleepy.png">
+                                <img alt="Stamp of Jason Voorhees from the 'Friday the 13th' movie series, there text on the bottom that reads 'HORROR FAN'." src="profile-content/stamps/horror.png">
+                                <img alt="Stamp of a Windows 98 era computer icon with text below that reads 'i love old web'." src="profile-content/stamps/old-web.png">
+                                <img alt="Stamp of the 'Petscop' opening game title from the YouTube horror web series of the same name." src="profile-content/stamps/petscop.png">
+                                <img alt="Stamp of the entire Bad Apple music video." src="profile-content/stamps/badapple.gif">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="right-column">
+                    <div class="tab">
+                        <span>
+                            <img alt="Icon for Internet Explorer in Windows XP." src="da explore.png" style="position: relative; height: 14px; top: 1px;">interests
+                        </span>
+                    </div>
+                    <div class="window">
+                        <menu role="tablist" aria-label="Sample Tabs" id="Rcolumn-navbar">
+                            <a href="profile.html" style="text-decoration: none;"><button role="tab" aria-controls="tab-A" style="cursor: pointer;">about</button></a>
+                            <a href="boundaries.html" style="text-decoration: none;"><button role="tab" aria-controls="tab-B" style="cursor: pointer;">boundaries</button></a>
+                            <button role="tab" aria-selected="true" aria-controls="tab-C" tabindex="0" id="tab-3">interests</button>
+                        </menu>
+                        <article role="tabpanel" class="Rcolumn-content" id="tab-C">
+                            <div id="interests">
+                                <div style="padding: 13px; display: flex; flex-direction: column; gap: 12px;">
+                                    <div style="padding: 13px; background-color: #fff; border: 1px outset #919b9c; border-radius: 0;">
+                                        <span style="padding: 1px 3px; font-family: JMHCthulhumbusArcade; font-size: 14px; color: #fff; background-color: #0012ca;">media:</span>
+                                        <ul style="list-style-type: none; padding: 10px 0; margin: 5px 0; font-family: JMHCthulhumbusArcade; color: #000; font-size: 13px;">
+                                            <li style="padding: 4px 0;">• anime & manga</li>
+                                            <li style="padding: 4px 0;">• video games</li>
+                                            <li style="padding: 4px 0;">• vocaloid music</li>
+                                            <li style="padding: 4px 0;">• indie games</li>
+                                        </ul>
+                                    </div>
+                                    <div style="padding: 13px; background-color: #fff; border: 1px outset #919b9c; border-radius: 0;">
+                                        <span style="padding: 1px 3px; font-family: JMHCthulhumbusArcade; font-size: 14px; color: #fff; background-color: #0012ca;">hobbies:</span>
+                                        <ul style="list-style-type: none; padding: 10px 0; margin: 5px 0; font-family: JMHCthulhumbusArcade; color: #000; font-size: 13px;">
+                                            <li style="padding: 4px 0;">• art & digital design</li>
+                                            <li style="padding: 4px 0;">• music production</li>
+                                            <li style="padding: 4px 0;">• writing</li>
+                                            <li style="padding: 4px 0;">• collecting</li>
+                                        </ul>
+                                    </div>
+                                    <div style="padding: 13px; background-color: #fff; border: 1px outset #919b9c; border-radius: 0;">
+                                        <span style="padding: 1px 3px; font-family: JMHCthulhumbusArcade; font-size: 14px; color: #fff; background-color: #0012ca;">interests:</span>
+                                        <ul style="list-style-type: none; padding: 10px 0; margin: 5px 0; font-family: JMHCthulhumbusArcade; color: #000; font-size: 13px;">
+                                            <li style="padding: 4px 0;">• web design & coding</li>
+                                            <li style="padding: 4px 0;">• retro/y2k aesthetics</li>
+                                            <li style="padding: 4px 0;">• creature design</li>
+                                            <li style="padding: 4px 0;">• storytelling</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            dragElement(document.getElementById("floating-RB"));
+
+            function dragElement(elmnt) {
+                var pos1 = 0
+                  , pos2 = 0
+                  , pos3 = 0
+                  , pos4 = 0;
+                if (document.getElementById(elmnt.id + "tab")) {
+
+                    document.getElementById(elmnt.id + "tab").onmousedown = dragMouseDown;
+                } else {
+                    elmnt.onmousedown = dragMouseDown;
+                }
+
+                function dragMouseDown(e) {
+                    e = e || window.event;
+                    e.preventDefault();
+
+                    pos3 = e.clientX;
+                    pos4 = e.clientY;
+                    document.onmouseup = closeDragElement;
+
+                    document.onmousemove = elementDrag;
+                }
+
+                function elementDrag(e) {
+                    e = e || window.event;
+                    e.preventDefault();
+
+                    pos1 = pos3 - e.clientX;
+                    pos2 = pos4 - e.clientY;
+                    pos3 = e.clientX;
+                    pos4 = e.clientY;
+
+                    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+                }
+
+                function closeDragElement() {
+                    document.onmouseup = null;
+                    document.onmousemove = null;
+                }
+            }
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var contentDiv = document.getElementById("RBtabcontent");
+                var chevronElement = document.getElementById("droparrow");
+                var mainDiv = document.getElementById("floating-RB");
+
+                chevronElement.addEventListener("click", function() {
+                    if (contentDiv.style.display === "block") {
+                        contentDiv.style.display = "none";
+                        chevronElement.style.transform = "rotate(180deg)";
+                        mainDiv.style.width = "210px";
+                        mainDiv.style.height = "fit-content";
+                    } else {
+                        contentDiv.style.display = "block";
+                        contentDiv.style.position = "relative";
+                        contentDiv.style.top = "3.5em";
+                        contentDiv.style.left = "5.07em";
+                        contentDiv.style.width = "fit-content";
+                        chevronElement.style.transform = "rotate(0deg)";
+                        mainDiv.style.width = "571px";
+                        mainDiv.style.height = "438px";
+                    }
+                });
+            });
+        </script>
+        <!-- functionality -->
+        <script src="js/tabs-profile.js"></script>
+        <script src="js/music-player.js?nocache=111125"></script>
+        <!-- tooltip -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+        <script>
+            (function($) {
+                $(document).ready(function() {
+                    $("[title]").style_my_tooltips({
+                        tip_follows_cursor: true,
+                        tip_delay_time: 10,
+                        tip_fade_speed: 10,
+                        attribute: "title"
+                    });
+                });
+            }
+            )(jQuery);
+        </script>
+    </body>
+</html>
